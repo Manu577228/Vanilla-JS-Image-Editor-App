@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Creepster&family=Nosifer&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poetsen One", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.container {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.upload-button:hover {
+  transform: scale(1.05);
+}
+
+.image-container {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  transform-origin: center center;
+}
+
+.controls {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.controls label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #ff7e5f;
+}
+
+.controls input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.rotate-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  color: black;
+}
+
+.rotate-button {
+  padding: 10px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 0.9rem;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.rotate-button:hover {
+  transform: scale(1.05);
+}
+
+#reset {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    to right,
+    #8a0707,
+    white
+  ); /* Blood red to white */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+}
+
+#download {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    to right,
+    lightgreen,
+    white
+  ); /* Light green to white */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+}
+
+#reset:hover,
+#download:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .controls {
+    font-size: 0.9rem;
+  }
+
+  .controls input[type="range"] {
+    height: 5px;
+  }
+
+  .rotate-buttons {
+    flex-direction: column;
+  }
+
+  .rotate-button {
+    margin: 5px 0;
+  }
+}
